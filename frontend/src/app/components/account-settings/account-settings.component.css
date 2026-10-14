@@ -1,0 +1,21 @@
+.nav-tabs {
+  border-bottom: none;
+}
+
+.parent-div {
+  padding-top: 6%;
+}
+
+a,
+a:hover {
+  color: black;
+}
+
+.nav-link.active {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom-color: black;
+  border-bottom-width: 3px;
+  color: rgb(27, 170, 236);
+}

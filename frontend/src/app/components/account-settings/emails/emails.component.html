@@ -1,0 +1,37 @@
+<div class="p-4 child-div row">
+  <div class="col-sm-10 col-md-8 col-lg-6">
+    <form [formGroup]="form">
+      <h5>Change your email</h5>
+      <div class="mb-3">
+        <input
+          type="email"
+          formControlName="email"
+          id="email"
+          class="form-control form-control-sm"
+          placeholder="New email"
+        />
+        <div
+          *ngIf="
+            form.controls['email'].invalid &&
+            (form.controls['email'].dirty || form.controls['email'].touched)
+          "
+        >
+          <div
+            *ngIf="form.controls['email'].errors?.['required']"
+            class="text-danger"
+          >
+            Please enter new email address.
+          </div>
+          <div *ngIf="form.controls['email'].errors?.['email']" class="text-danger">
+            Please enter valid email address.
+          </div>
+        </div>
+      </div>
+      <div class="mb-3">
+        <button (click)="submit()" name="submit" class="submit_btn mb-2">
+          Set email
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

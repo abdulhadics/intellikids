@@ -1,0 +1,173 @@
+
+<!-- top container -->
+<div class="container my-3 p-3">
+    <div class="row">
+        <div class="col-6 p-3 d-flex flex-column  justify-content-center align-items-center">
+            <img class="purpose-img" src="./../../../assets/images/e-learning.jpg.avif" >
+            
+        </div>
+        <div class="col-6  d-flex flex-column justify-content-center">
+            
+                <h1>For every student,<br>every classroom.<br>Real results.<hr class="m-1" style="width:50%"></h1>
+                <p>Enabling children to learn, explore, and thrive through interactive e-learning experiences, fostering a lifelong love for knowledge.</p>
+                <div class="d-flex flex-row">
+                    <div class="col-6 p-3">
+                        <button class="btn btn-primary purpose-btn">Learners</button>
+                    </div>
+                    <!-- <div class="col-6 p-3">
+                        <button class="btn btn-primary purpose-btn">Teachers</button>
+                    </div> -->
+                </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- container for courses and classes -->
+<!-- <div class="container course-container">
+
+    <div class="row">
+            
+                <div class="col-6 p-3">
+                    <div *ngFor = "let course of courses;let i = index"  [class.hidden]="i%2 != 0">
+                        <div class="d-flex flex-row">
+                            <div class="col-10">
+                                <div class="d-flex flex-row">
+                                    <div style="font-size: 1.2em;">
+                                        <i class = "fa fa-book"></i>
+                                    </div>
+                                    <div class="px-4">
+                                        <h4 class="course"><b>{{course.name}}</b></h4>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div style="font-size: 1.5em;" (click)="someFunction(course)"  >
+                                    <i style="cursor:pointer" class="fa fa-angle-up" [class.hidden]="!course.classesVisible"></i>
+                                    <i style="cursor:pointer" class="fa fa-angle-down" [class.hidden]="course.classesVisible"></i>
+                            </div>
+                        </div>
+                        <div *ngIf="course.classesVisible" class="py-2">
+                            <div *ngFor="let class of courses[i].classes" class ="px-4" >
+                                <p class="course" style="color:grey" (click)="someFunction(course)">{{class}}</p>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="col-6 p-3">
+                    <div *ngFor = "let course of courses;let i = index"   [class.hidden]="i%2 == 0">
+                        <div class="d-flex flex-row">
+                            <div class="col-10">
+                                <div class="d-flex flex-row">
+                                    <div style="font-size: 1.2em;">
+                                        <i class = "fa fa-book"></i>
+                                    </div>
+                                    <div class="px-4">
+                                        <h4 class="course"><b>{{course.name}} </b></h4>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div style="font-size: 1.5em;" (click)="someFunction(course)"  >
+                                    <i style="cursor:pointer" class="fa fa-angle-up" [class.hidden]="!course.classesVisible"></i>
+                                    <i style="cursor:pointer" class="fa fa-angle-down" [class.hidden]="course.classesVisible"></i>
+                            </div>
+                        </div>
+
+                        <div *ngIf="course.classesVisible" class="py-2">
+                            <div *ngFor="let class of courses[i].classes" class ="px-4" >
+                                <p class="course" style="color:grey" (click)="someFunction(course)">{{class}}</p>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+      
+    </div>
+</div> -->
+
+<div class="container course-container">
+
+    <div class="row">
+        <div class="col-6 p-3">
+                <div class="d-flex flex-row">
+                    <div class="col-10">
+                        <div class="d-flex flex-row">
+                            <div style="font-size: 1.2em;">
+                                <i class = "fa fa-book"></i>
+                            </div>
+                            <div class="px-4">
+                                <h4 class="course"><b>Maths</b></h4>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="font-size: 1.5em;" (click)="someFunction('Maths')">
+                            <fa-icon style="cursor:pointer" [icon] = "angleUp" [class.hidden]="!mathClassesVisible"></fa-icon>
+                            <fa-icon style="cursor:pointer" [icon] = "angleDown" [class.hidden]="mathClassesVisible"></fa-icon>
+                    </div>
+                </div>
+                <div *ngIf="mathClassesVisible" >
+                    <div *ngFor = "let course of mathClasses;let i = index"  >
+                        <div class="px-4" >
+                            <span class="course" style="color:grey" >{{course.tutorial_text}}</span>
+                        </div>
+                    </div>
+                </div>
+            <hr>
+        </div>
+
+        <div class="col-6 p-3">
+            <div class="d-flex flex-row">
+                <div class="col-10">
+                    <div class="d-flex flex-row">
+                        <div style="font-size: 1.2em;">
+                            <i class = "fa fa-book"></i>
+                        </div>
+                        <div class="px-4">
+                            <h4 class="course"><b>English</b></h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="font-size: 1.5em;" (click)="someFunction('English')">
+                        <fa-icon style="cursor:pointer" [icon] = "angleUp" [class.hidden]="!englishClassesVisible"></fa-icon>
+                        <fa-icon style="cursor:pointer" [icon] = "angleDown" [class.hidden]="englishClassesVisible"></fa-icon>
+                </div>
+            </div>
+            <div *ngIf="englishClassesVisible" >
+                <div *ngFor = "let course of englishClasses;let i = index"  >
+                    <div class="px-4" >
+                        <span class="course" style="color:grey" >{{course.tutorial_text}}</span>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>       
+      
+    </div>
+</div>
+
+<!-- bottom container -->
+<div class="container my-3 p-3">
+    <div class="row">
+        <div class="col-4 d-flex flex-column  justify-content-center align-items-center">
+            
+            <img class="features-image" src="./../../../assets/images/personalized_learning_icon.png">
+            <h3 class="features-heading">Personalized Learning</h3>
+            <p class="features-text">Tailoring education to individual student needs, promoting self-paced learning, and enhancing student engagement through customized learning experiences.</p>
+        </div>
+        <div class="col-4 d-flex flex-column justify-content-center align-items-center" >
+            <img class="features-image" src="./../../../assets/images/trusted_content_icon.png">
+            <h3 class="features-heading">Trusted Content</h3>
+            <p class="features-text">Ensuring the quality, accuracy, and reliability of educational materials, fostering a trustworthy learning environment for students and educators.</p>
+        </div>
+        <div class="col-4 d-flex flex-column justify-content-center align-items-center">
+            <img class="features-image" src="./../../../assets/images/empower_teachers_icon.png">
+            <h3 class="features-heading">Tools to Empower Teachers</h3>
+            <p class="features-text">Providing educators with innovative teaching tools, resources, and support to enhance teaching effectiveness and student outcomes.</p>
+        </div>
+    </div>
+</div>

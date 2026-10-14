@@ -1,0 +1,20 @@
+<div class="form-loader" *ngIf="loading">
+    <div class="spinner-border text-primary" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+
+<div class="container bg-light py-5" *ngIf="!loading">
+    <h1 class="display-5 fw-bold">{{currentQuiz.title}}</h1>
+    <p class="col-md-8 fs-4">This quiz will contains total {{currentQuiz.questions.length}} questions.</p>
+    <h4>Rules:</h4>
+    <ol>
+        <li>Correct Answer gives you 1 point</li>
+        <li>Incorrect Answer gives you 0 point</li>
+        <li>You will have 30 sec to answer each question</li>
+        <li>To pass quiz you need atleast 60% points of total</li>
+        <li>Refereshing the page will reset the Quiz</li>
+    </ol>
+    <h1 style="font-family: cursive;text-align:center">All the best!!</h1>
+    <button class="btn btn-primary btn-lg" (click)="startQuiz(currentQuiz.id)" >Start the Quiz!!</button>
+</div>

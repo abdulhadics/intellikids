@@ -1,0 +1,8 @@
+.child-div {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px 2px rgb(237, 237, 248);
+    max-width: 80%;
+    border: 1px solid rgba(204, 204, 234, 0.5);
+    border-radius: 0.25rem;
+  }
+  

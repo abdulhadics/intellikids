@@ -1,0 +1,29 @@
+<div class="form-loader" *ngIf="loading">
+  <div class="spinner-border text-primary" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+</div>
+<div class="container-fluid py-5" *ngIf="!loading">
+  <h5 class="text-primary text-uppercase mb-3 text-center">
+    {{ selectedContent.content_name }}
+  </h5>
+  <div class="course-list" *ngFor="let video of selectedContent.video" style="background-color: lightcyan !important;">
+    <div class="course row d-flex">
+      <div class="course-title">{{ video.name.split(".")[0] }}</div>
+      <div class="course-description">{{ selectedContent.tutorial_text }}.</div>
+      <div class="">
+        <button
+          (click)="openVideo(video.url)"
+          class="submit_btn mb-2"
+          style="padding: 0.5%; width: 10%"
+        >
+          {{ video.url === activeVideoUrl ? "Hide" : "Play" }}
+        </button>
+        <app-video-player
+          *ngIf="video.url === activeVideoUrl"
+          [videoSource]="activeVideoUrl"
+        ></app-video-player>
+      </div>
+    </div>
+  </div>
+</div>

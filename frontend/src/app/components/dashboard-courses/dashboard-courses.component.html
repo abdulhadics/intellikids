@@ -1,0 +1,24 @@
+<div class="form-loader" *ngIf="loading">
+    <div class="spinner-border text-primary" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+</div>
+<div class="container-fluid py-5" *ngIf="!loading">
+  <div class="container">
+      <div class="text-center mb-5">
+          <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Courses</h5>
+          <h1>Explore Ongoing Courses</h1>
+      </div>
+      <div class="row ps-5 ms-5">
+        <div class="col-lg-5 col-md-8 mb-4" *ngFor="let content of userCourses">
+          <div class="cat-item position-relative overflow-hidden rounded mb-2">
+            <img class="img-fluid" src="../../../assets/images/course-1.jpg" alt="">
+            <a class="cat-overlay text-white text-decoration-none" [routerLink]="['/my/courses', content.id]">
+              <h4 class="text-white font-weight-medium">{{ content.content_name }}</h4>
+              <span>{{content.video.length}} Videos</span>
+            </a>
+          </div>
+        </div>
+      </div>      
+  </div>
+</div>

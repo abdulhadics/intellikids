@@ -1,0 +1,78 @@
+<nav style="background-color: cornsilk !important;">
+  <div class="sidebar-sticky">
+    <div class="user">
+      <a routerLink="/account-settings">
+     
+        <img  class="dp" [src]="user && user.avatar ? user.avatar.url : '/assets/images/default-user-image.png'" id="image_avatar" >
+         
+      </a>
+      <h6 href="#" class="name" id="name"
+        >{{ user && user.first_name ? user.first_name : null }}
+        {{ user && user.last_name ? user.last_name : null }}</h6
+      >
+    </div>
+
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          routerLink="/dashboard"
+          >Dashboard</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"
+           routerLinkActive="active"
+           routerLink="/my/courses"
+          >Courses</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"
+           routerLinkActive="active"
+           routerLink="/my/quizzes"
+          >Quizzes</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"
+           routerLinkActive="active"
+           routerLink="/my/progress"
+          >Progress</a
+        >
+      </li>
+    </ul>
+
+    <h6 class="sidebar-heading">Users Management</h6>
+
+    <ul class="nav flex-column">
+      <!--<li class="nav-item"><a ng-class="{'nav-link active': currentPage=='dashboard', 'nav-link': currentPage!='dashboard'}" href="#" ng-click="setPageOnDashboard('messages')">Messages</a></li>-->
+      <li class="nav-item">
+        <!-- <a
+          class="nav-link"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          routerLink="/users"
+          >Users</a
+        > -->
+      </li>
+    </ul>
+
+    <h6 class="sidebar-heading">Profile</h6>
+
+    <ul class="nav flex-column">
+      <!--<li class="nav-item"><a ng-class="{'nav-link active': currentPage=='dashboard', 'nav-link': currentPage!='dashboard'}" href="#" ng-click="setPageOnDashboard('messages')">Messages</a></li>-->
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          routerLink="/account-settings"
+          >Account Settings</a
+        >
+      </li>
+    </ul>
+  </div>
+</nav>

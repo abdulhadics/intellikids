@@ -1,0 +1,6 @@
+.header{
+    flex-shrink: 0;
+    flex-grow: 0;
+    background: #039be5;
+    padding: 3px 5px;
+  }

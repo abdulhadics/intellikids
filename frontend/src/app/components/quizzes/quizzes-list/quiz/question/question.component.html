@@ -1,0 +1,85 @@
+<div class="form-loader" *ngIf="loading">
+    <div class="spinner-border text-primary" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+
+<div class="container mt-5" *ngIf="!loading">
+    <div class="card">
+        <div class="d-flex justify-content-between p-3">
+            <div class="quiz-header">
+                <h4 style="font-family: cursive;">{{title}} Quiz!</h4>
+                <span style="font-style: italic;">Welcome {{name}}</span>
+            </div>
+        </div>
+
+        <ng-container *ngIf="!isQuizCompleted">
+            <div class="d-flex justify-content-around py-3">
+                <div class="score">
+                    <h5>{{points}} Points</h5>
+                </div>
+                <div class="question-remain">
+                    <span style="font-style: italic;">Question {{currentQuestion+1}} of {{questionList.length}}</span>
+                </div>
+                <div class="timer">
+                    <h5>{{counter}} sec ⏱</h5>
+                </div>
+            </div>
+            <div class="progress mb-3">
+                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" [ngStyle]="{'width':progress+'%'}" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="question">
+                <div class="">
+                    <h4 class="ps-2" style="font-style: italic;">{{currentQuestion + 1}}. {{questionList[currentQuestion]?.question}}</h4>
+                </div>
+            </div>
+            <div class="d-flex flex-row justify-content-between">
+                <form [formGroup]="form">
+                  <div class="mb-3 ms-3">
+                    <input
+                      type="text"
+                      formControlName="input"
+                      id="input"
+                      class="form-control form-control-sm"
+                      placeholder="Your Answer"
+                    />
+                    <div *ngIf="form.get('input')?.invalid && (form.get('input')?.dirty || form.get('input')?.touched)">
+                      <div *ngIf="form.get('input')?.errors?.['required']" class="text-danger">
+                        Answer is required.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <button (click)="answer(currentQuestion+1, questionList[currentQuestion]?.reference_answer)" name="submit"
+                      class="submit_btn ms-3 mb-3">
+                      Submit
+                    </button>
+                    <button (mousedown)="startRecording()" (mouseup)="stopRecording()" (mouseleave)="stopRecording()"
+                          [disabled]="isRecording" class="submit_btn ms-3 mb-3" [class.recording]="isRecording" style="width: 250px !important;">
+                          Give Audio Answer
+                    </button>
+                  </div>
+                </form>
+              </div>                                
+            <div class="d-flex justify-content-between align-items-center">
+                <button class="btn ms-3" style="padding: 0px 15px;" (click)="nextQuestion()"><i class="fa text-secondary fa-chevron-right fa-2x" aria-hidden="true"></i></button>
+            </div>
+        </ng-container>
+
+        <ng-container *ngIf="isQuizCompleted">
+            <div class="row d-flex justify-content-between">
+                <img style="width: 50%;" class="img-fluid col-sm-12 mx-auto" src="https://icon-library.com/images/celebration-icon-png/celebration-icon-png-7.jpg" alt="">
+                <div class="result text-center col-md-6 col-sm-12">
+                    <h3>Congratulations!! <br>You have completed the quiz. <br>Below is your result:</h3>
+                    <p>Total Question Attempted : {{questionList.length}} </p>
+                    <p>Total Correct Answered : {{correctAnswer}} </p>
+                    <p>Total Wrong Answered : {{inCorrectAnswer}} </p>
+                    <p>Your Score : {{points}} Points </p>
+                    <p>You {{checkResult() ? "Passed." : "Failed."}}</p>
+                </div>
+            </div>
+            <button class="btn" style="padding: 0px 15px;" (click)="goToDashboard()">Return</button>
+        </ng-container>
+
+    </div>
+</div>

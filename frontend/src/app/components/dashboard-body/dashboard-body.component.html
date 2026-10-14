@@ -1,0 +1,66 @@
+<div class="form-loader" *ngIf="loading">
+  <div class="spinner-border text-primary" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+</div>
+<main role="main " class="p-1" *ngIf="!loading">
+
+  <div class="stats d-flex flex-row">
+    <div class="d-flex justify-content-between align-items-center w-100">
+      <h2 class="text-primaryb-0">
+        Welcome {{user.first_name}}
+      </h2>
+      <h2 class="text-primary mb-0">
+        Grade {{user.grade}}
+      </h2>
+    </div>
+  </div>  
+
+  <div class="stats mt-3">
+    <div class="row">
+      <div class="col-xl-6 col-lg-6">
+        <a [routerLink]="['/my','courses']" class="card">
+          <h1>{{user.contents.length}}</h1><p>Courses</p>
+          <div class="icn"><i class="anb an-github" aria-hidden="true"></i></div>
+        </a>
+      </div>
+      <div class="col-xl-6 col-lg-6">
+        <a [routerLink]="['/my','quizzes']" class="card">
+          <h1>{{data.quizzesLength}}</h1><p>Quizzs</p>
+          <div class="icn"><i class="anb an-github" aria-hidden="true"></i></div>
+        </a>
+      </div>
+    </div>
+
+    <div class="card mt-3" >
+      <div class="card_heading">
+        <h4>Courses</h4> <a [routerLink]="['/my','courses']" class="card_heading_link">View all <i class="fa fa-long-arrow-right"></i></a>
+        <table width="100%" cellpadding="0" cellspacing="0" class="table">
+          <tbody>
+            <tr *ngFor="let d of data.contents">
+              <th width="5%" scope="row">{{ d.id }}</th>
+              <td width="90%">{{ d.content_name }}</td>
+              <td width="15%" align="center">
+                <div class="action">
+                  <a href="#" [routerLink]="['/my', 'courses', d.id]"><i class="anb an-github"></i></a>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="group_products">
+        <div class="row">
+          <!-- <div class="col-xl-4 col-lg-6 mt-3" *ngFor="let d of data.products.slice(0,3);">
+            <a href="#" [routerLink]="['/my','product', d.id]" class="card" style="min-height: 6.6rem;">
+              <img src="{{d.logo  ? d.logo.url: 'assets/images/default-logo.png'}}" alt="" width="63">
+              
+            </a>
+          </div> -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>

@@ -1,0 +1,34 @@
+.course:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.container{
+    justify-content: center;
+    align-items: center;
+    max-width: 75%;
+}
+
+.course-container{
+    background-color: rgb(242,242,242);
+}
+
+.features-image{
+    width: 150px;
+    height: 150px;
+}
+.features-heading{
+    font-family: serif;
+}
+.features-text{
+    text-align: center;
+}
+
+.purpose-img{
+    height: 300px;
+    width: 100%;
+}
+
+.purpose-btn{
+    width: 100%;
+}

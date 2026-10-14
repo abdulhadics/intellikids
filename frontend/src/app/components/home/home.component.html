@@ -1,0 +1,552 @@
+
+<body>
+
+    <body>
+
+
+        <!-- Hero Section -->
+        <div class="container my-5">
+            <div class="position-relative p-5 text-center text-muted bg-body">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" fill="currentColor"
+                    class="bi bi-mortarboard" viewBox="0 0 16 16">
+                    <path
+                        d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5ZM8 8.46 1.758 5.965 8 3.052l6.242 2.913L8 8.46Z" />
+                    <path
+                        d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46l-3.892-1.556Z" />
+                </svg>
+
+                <h1 class="text-body-emphasis">My Academy</h1>
+                <h2 class="col-lg-6 mx-auto mb-4">
+                    For every student, every classroom, real results.
+                </h2>
+                <button class="btn btn-primary px-5 mb-5" type="button">
+                    Learners
+                </button>
+                <button class="btn btn-primary ms-2 mb-5" type="button">
+                    Teachers
+                </button>
+            </div>
+        </div>
+
+
+        <!-- Featured Courses Section -->
+        <section class="container my-5">
+
+            <nav class="_5kw39h" aria-label="Courses">
+                <div class="_xu2jcg _1uo6y4s" >
+                    <div class="_xu2jcg">
+                        <div class="_xu2jcg _15vgm93"><button class="_1gbamhn" aria-expanded="false"
+                                (click)="toggleListVisibility(1)"><img
+                                    src="https://cdn.kastatic.org/genfiles/topic-icons/icons/math.png-444b34-128c.png"
+                                    width="45" height="45" class="_1yvsftr" alt="">Math: Pre-K - 8th grade<svg
+                                    aria-hidden="true" class="_ja3n4i" focusable="false" width="16" height="9"
+                                    viewBox="0 0 16 9">
+                                    <path fill="#21242C"
+                                        d="M13.5869 0.323724C14.0185 -0.107908 14.7183 -0.107908 15.15 0.323724C15.5816 0.755356 15.5816 1.45517 15.15 1.8868L8.51838 8.51838C8.08675 8.95001 7.38693 8.95001 6.9553 8.51838L0.323724 1.8868C-0.107908 1.45517 -0.107908 0.755356 0.323724 0.323724C0.755356 -0.107908 1.45517 -0.107908 1.8868 0.323724L7.73684 6.17376L13.5869 0.323724Z">
+                                    </path>
+                                </svg></button>
+                            <ul class="_u3ctvv" *ngIf="activeList === 1">
+                                <li class="_3hmsj"><a href="/kids" class="_pt9he7"
+                                        aria-activedescendant="course-title-0000"><span id="course-title-0000">Pre-K
+                                            through grade 2 (Khan Kids)</span></a></li>
+                                <li class="_3hmsj"><a href="/math/early-math" class="_pt9he7"
+                                        aria-activedescendant="course-title-0001"><span id="course-title-0001">Early
+                                            math review</span></a></li>
+                                <li class="_3hmsj"><a href="/math/cc-2nd-grade-math" class="_pt9he7"
+                                        aria-activedescendant="course-title-0002"><span id="course-title-0002">2nd
+                                            grade</span></a></li>
+                                <li class="_3hmsj"><a href="/math/cc-third-grade-math" class="_pt9he7"
+                                        aria-activedescendant="course-title-0003"><span id="course-title-0003">3rd
+                                            grade</span></a></li>
+                                <li class="_3hmsj"><a href="/math/cc-fourth-grade-math" class="_pt9he7"
+                                        aria-activedescendant="course-title-0004"><span id="course-title-0004">4th
+                                            grade</span></a></li>
+                            </ul>
+                            <ul class="_rm7tne8" *ngIf="activeList === 1">
+                                <li class="_3hmsj"><a href="/math/cc-fifth-grade-math" class="_pt9he7"
+                                        aria-activedescendant="course-title-0010"><span id="course-title-0010">5th
+                                            grade</span></a></li>
+                                <li class="_3hmsj"><a href="/math/cc-sixth-grade-math" class="_pt9he7"
+                                        aria-activedescendant="course-title-0011"><span id="course-title-0011">6th
+                                            grade</span></a></li>
+                                <li class="_3hmsj"><a href="/math/cc-seventh-grade-math" class="_pt9he7"
+                                        aria-activedescendant="course-title-0012"><span id="course-title-0012">7th
+                                            grade</span></a></li>
+                                <li class="_3hmsj"><a href="/math/cc-eighth-grade-math" class="_pt9he7"
+                                        aria-activedescendant="course-title-0013"><span id="course-title-0013">8th
+                                            grade</span></a></li>
+                                <li class="_1vrfoknn"><a href="/math/k-8-grades" class="_pt9he7"
+                                        aria-activedescendant="course-title-0014"><span id="course-title-0014">See Pre-K
+                                            - 8th Math</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="_xu2jcg _15vgm93"><button class="_1gbamhn" aria-expanded="false"
+                                (click)="toggleListVisibility(2)"><img
+                                    src="https://cdn.kastatic.org/genfiles/topic-icons/icons/math.png-444b34-128c.png"
+                                    width="45" height="45" class="_1yvsftr" alt="">Math: high school &amp; college<svg
+                                    aria-hidden="true" class="_ja3n4i" focusable="false" width="16" height="9"
+                                    viewBox="0 0 16 9">
+                                    <path fill="#21242C"
+                                        d="M13.5869 0.323724C14.0185 -0.107908 14.7183 -0.107908 15.15 0.323724C15.5816 0.755356 15.5816 1.45517 15.15 1.8868L8.51838 8.51838C8.08675 8.95001 7.38693 8.95001 6.9553 8.51838L0.323724 1.8868C-0.107908 1.45517 -0.107908 0.755356 0.323724 0.323724C0.755356 -0.107908 1.45517 -0.107908 1.8868 0.323724L7.73684 6.17376L13.5869 0.323724Z">
+                                    </path>
+                                </svg></button>
+                            <ul class="_u3ctvv" *ngIf="activeList === 2">
+                                <li class="_3hmsj"><a href="/math/algebra" class="_pt9he7"
+                                        aria-activedescendant="course-title-0100"><span id="course-title-0100">Algebra
+                                            1</span></a></li>
+                                <li class="_3hmsj"><a href="/math/geometry" class="_pt9he7"
+                                        aria-activedescendant="course-title-0101"><span
+                                            id="course-title-0101">Geometry</span></a></li>
+                                <li class="_3hmsj"><a href="/math/algebra2" class="_pt9he7"
+                                        aria-activedescendant="course-title-0102"><span id="course-title-0102">Algebra
+                                            2</span></a></li>
+                                <li class="_3hmsj"><a href="/math/math1" class="_pt9he7"
+                                        aria-activedescendant="course-title-0103"><span
+                                            id="course-title-0103">Integrated math 1</span></a></li>
+                                <li class="_3hmsj"><a href="/math/math2" class="_pt9he7"
+                                        aria-activedescendant="course-title-0104"><span
+                                            id="course-title-0104">Integrated math 2</span></a></li>
+                                <li class="_3hmsj"><a href="/math/math3" class="_pt9he7"
+                                        aria-activedescendant="course-title-0105"><span
+                                            id="course-title-0105">Integrated math 3</span></a></li>
+                                <li class="_3hmsj"><a href="/math/algebra-basics" class="_pt9he7"
+                                        aria-activedescendant="course-title-0106"><span id="course-title-0106">Algebra
+                                            basics</span></a></li>
+                                <li class="_3hmsj"><a href="/math/trigonometry" class="_pt9he7"
+                                        aria-activedescendant="course-title-0107"><span
+                                            id="course-title-0107">Trigonometry</span></a></li>
+                                <li class="_3hmsj"><a href="/math/precalculus" class="_pt9he7"
+                                        aria-activedescendant="course-title-0108"><span
+                                            id="course-title-0108">Precalculus</span></a></li>
+                                <li class="_3hmsj"><a href="/math/probability" class="_pt9he7"
+                                        aria-activedescendant="course-title-0109"><span id="course-title-0109">High
+                                            school statistics</span></a></li>
+                            </ul>
+                            <ul class="_rm7tne8" *ngIf="activeList === 2">
+                                <li class="_3hmsj"><a href="/math/statistics-probability" class="_pt9he7"
+                                        aria-activedescendant="course-title-0110"><span
+                                            id="course-title-0110">Statistics &amp; probability</span></a></li>
+                                <li class="_3hmsj"><a href="/math/college-algebra" class="_pt9he7"
+                                        aria-activedescendant="course-title-0111"><span id="course-title-0111">College
+                                            algebra</span></a></li>
+                                <li class="_3hmsj"><a href="/math/ap-calculus-ab" class="_pt9he7"
+                                        aria-activedescendant="course-title-0112"><span
+                                            id="course-title-0112">AP®︎/College Calculus AB</span></a></li>
+                                <li class="_3hmsj"><a href="/math/ap-calculus-bc" class="_pt9he7"
+                                        aria-activedescendant="course-title-0113"><span
+                                            id="course-title-0113">AP®︎/College Calculus BC</span></a></li>
+                                <li class="_3hmsj"><a href="/math/ap-statistics" class="_pt9he7"
+                                        aria-activedescendant="course-title-0114"><span
+                                            id="course-title-0114">AP®︎/College Statistics</span></a></li>
+                                <li class="_3hmsj"><a href="/math/multivariable-calculus" class="_pt9he7"
+                                        aria-activedescendant="course-title-0115"><span
+                                            id="course-title-0115">Multivariable calculus</span></a></li>
+                                <li class="_3hmsj"><a href="/math/differential-equations" class="_pt9he7"
+                                        aria-activedescendant="course-title-0116"><span
+                                            id="course-title-0116">Differential equations</span></a></li>
+                                <li class="_3hmsj"><a href="/math/linear-algebra" class="_pt9he7"
+                                        aria-activedescendant="course-title-0117"><span id="course-title-0117">Linear
+                                            algebra</span></a></li>
+                                <li class="_1vrfoknn"><a href="/math" class="_pt9he7"
+                                        aria-activedescendant="course-title-0118"><span id="course-title-0118">See all
+                                            Math</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="_xu2jcg _15vgm93"><button class="_1gbamhn" aria-expanded="false"
+                                (click)="toggleListVisibility(3)"><img
+                                    src="https://cdn.kastatic.org/genfiles/topic-icons/icons/math.png-444b34-128c.png"
+                                    width="45" height="45" class="_1yvsftr" alt="">Math: Get ready courses<svg
+                                    aria-hidden="true" class="_ja3n4i" focusable="false" width="16" height="9"
+                                    viewBox="0 0 16 9">
+                                    <path fill="#21242C"
+                                        d="M13.5869 0.323724C14.0185 -0.107908 14.7183 -0.107908 15.15 0.323724C15.5816 0.755356 15.5816 1.45517 15.15 1.8868L8.51838 8.51838C8.08675 8.95001 7.38693 8.95001 6.9553 8.51838L0.323724 1.8868C-0.107908 1.45517 -0.107908 0.755356 0.323724 0.323724C0.755356 -0.107908 1.45517 -0.107908 1.8868 0.323724L7.73684 6.17376L13.5869 0.323724Z">
+                                    </path>
+                                </svg></button>
+                            <ul class="_u3ctvv" *ngIf="activeList === 3">
+                                <li class="_3hmsj"><a href="/math/get-ready-for-3rd-grade" class="_pt9he7"
+                                        aria-activedescendant="course-title-0200"><span id="course-title-0200">Get ready
+                                            for 3rd grade</span></a></li>
+                                <li class="_3hmsj"><a href="/math/get-ready-for-4th-grade" class="_pt9he7"
+                                        aria-activedescendant="course-title-0201"><span id="course-title-0201">Get ready
+                                            for 4th grade</span></a></li>
+                                <li class="_3hmsj"><a href="/math/get-ready-for-5th-grade" class="_pt9he7"
+                                        aria-activedescendant="course-title-0202"><span id="course-title-0202">Get ready
+                                            for 5th grade</span></a></li>
+                                <li class="_3hmsj"><a href="/math/get-ready-for-6th-grade" class="_pt9he7"
+                                        aria-activedescendant="course-title-0203"><span id="course-title-0203">Get ready
+                                            for 6th grade</span></a></li>
+                                <li class="_3hmsj"><a href="/math/get-ready-for-7th-grade" class="_pt9he7"
+                                        aria-activedescendant="course-title-0204"><span id="course-title-0204">Get ready
+                                            for 7th grade</span></a></li>
+                                <li class="_3hmsj"><a href="/math/get-ready-for-8th-grade" class="_pt9he7"
+                                        aria-activedescendant="course-title-0205"><span id="course-title-0205">Get ready
+                                            for 8th grade</span></a></li>
+                            </ul>
+                            <ul class="_rm7tne8" *ngIf="activeList === 3">
+                                <li class="_3hmsj"><a href="/math/get-ready-for-algebra-i" class="_pt9he7"
+                                        aria-activedescendant="course-title-0210"><span id="course-title-0210">Get ready
+                                            for Algebra 1</span></a></li>
+                                <li class="_3hmsj"><a href="/math/get-ready-for-geometry" class="_pt9he7"
+                                        aria-activedescendant="course-title-0211"><span id="course-title-0211">Get ready
+                                            for Geometry</span></a></li>
+                                <li class="_3hmsj"><a href="/math/get-ready-for-algebra-ii" class="_pt9he7"
+                                        aria-activedescendant="course-title-0212"><span id="course-title-0212">Get ready
+                                            for Algebra 2</span></a></li>
+                                <li class="_3hmsj"><a href="/math/get-ready-for-precalculus" class="_pt9he7"
+                                        aria-activedescendant="course-title-0213"><span id="course-title-0213">Get ready
+                                            for Precalculus</span></a></li>
+                                <li class="_3hmsj"><a href="/math/get-ready-for-ap-calc" class="_pt9he7"
+                                        aria-activedescendant="course-title-0214"><span id="course-title-0214">Get ready
+                                            for AP® Calculus</span></a></li>
+                                <li class="_3hmsj"><a href="/math/get-ready-for-ap-statistics" class="_pt9he7"
+                                        aria-activedescendant="course-title-0215"><span id="course-title-0215">Get ready
+                                            for AP® Statistics</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="_xu2jcg _15vgm93"><button class="_1gbamhn" aria-expanded="false"
+                                (click)="toggleListVisibility(4)"><img
+                                    src="https://cdn.kastatic.org/genfiles/topic-icons/icons/reading_language_arts.png-58ff5a-128c.png"
+                                    width="45" height="45" class="_1yvsftr" alt="">Reading &amp; language arts<svg
+                                    aria-hidden="true" class="_ja3n4i" focusable="false" width="16" height="9"
+                                    viewBox="0 0 16 9">
+                                    <path fill="#21242C"
+                                        d="M13.5869 0.323724C14.0185 -0.107908 14.7183 -0.107908 15.15 0.323724C15.5816 0.755356 15.5816 1.45517 15.15 1.8868L8.51838 8.51838C8.08675 8.95001 7.38693 8.95001 6.9553 8.51838L0.323724 1.8868C-0.107908 1.45517 -0.107908 0.755356 0.323724 0.323724C0.755356 -0.107908 1.45517 -0.107908 1.8868 0.323724L7.73684 6.17376L13.5869 0.323724Z">
+                                    </path>
+                                </svg></button>
+                            <ul class="_u3ctvv" *ngIf="activeList === 4">
+                                <li class="_3hmsj"><a href="/kids" class="_pt9he7"
+                                        aria-activedescendant="course-title-0300"><span id="course-title-0300">Up to 2nd
+                                            grade (Khan Kids)</span></a></li>
+                                <li class="_3hmsj"><a href="/ela/cc-2nd-reading-vocab" class="_pt9he7"
+                                        aria-activedescendant="course-title-0301"><span id="course-title-0301">2nd
+                                            grade</span></a></li>
+                                <li class="_3hmsj"><a href="/ela/cc-3rd-reading-vocab" class="_pt9he7"
+                                        aria-activedescendant="course-title-0302"><span id="course-title-0302">3rd
+                                            grade</span></a></li>
+                                <li class="_3hmsj"><a href="/ela/cc-4th-reading-vocab" class="_pt9he7"
+                                        aria-activedescendant="course-title-0303"><span id="course-title-0303">4th
+                                            grade</span></a></li>
+                                <li class="_3hmsj"><a href="/ela/cc-5th-reading-vocab" class="_pt9he7"
+                                        aria-activedescendant="course-title-0304"><span id="course-title-0304">5th
+                                            grade</span></a></li>
+                                <li class="_3hmsj"><a href="/ela/cc-6th-reading-vocab" class="_pt9he7"
+                                        aria-activedescendant="course-title-0305"><span id="course-title-0305">6th
+                                            grade</span></a></li>
+                            </ul>
+                            <ul class="_rm7tne8" *ngIf="activeList === 4">
+                                <li class="_3hmsj"><a href="/ela/cc-7th-reading-vocab" class="_pt9he7"
+                                        aria-activedescendant="course-title-0310"><span id="course-title-0310">7th
+                                            grade</span></a></li>
+                                <li class="_3hmsj"><a href="/ela/cc-8th-reading-vocab" class="_pt9he7"
+                                        aria-activedescendant="course-title-0311"><span id="course-title-0311">8th
+                                            grade</span></a></li>
+                                <li class="_3hmsj"><a href="/ela/cc-9th-reading-vocab" class="_pt9he7"
+                                        aria-activedescendant="course-title-0312"><span id="course-title-0312">9th
+                                            grade</span></a></li>
+                                <li class="_3hmsj"><a href="/humanities/grammar" class="_pt9he7"
+                                        aria-activedescendant="course-title-0313"><span
+                                            id="course-title-0313">Grammar</span></a></li>
+                                <li class="_1vrfoknn"><a href="/ela" class="_pt9he7"
+                                        aria-activedescendant="course-title-0314"><span id="course-title-0314">See all
+                                            Reading &amp; Language Arts</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="_xu2jcg _15vgm93"><button class="_1gbamhn" aria-expanded="false"
+                                (click)="toggleListVisibility(5)"><img
+                                    src="https://cdn.kastatic.org/genfiles/topic-icons/icons/life_skills.png-1a4785-128c.png"
+                                    width="45" height="45" class="_1yvsftr" alt="">Life skills<svg aria-hidden="true"
+                                    class="_ja3n4i" focusable="false" width="16" height="9" viewBox="0 0 16 9">
+                                    <path fill="#21242C"
+                                        d="M13.5869 0.323724C14.0185 -0.107908 14.7183 -0.107908 15.15 0.323724C15.5816 0.755356 15.5816 1.45517 15.15 1.8868L8.51838 8.51838C8.08675 8.95001 7.38693 8.95001 6.9553 8.51838L0.323724 1.8868C-0.107908 1.45517 -0.107908 0.755356 0.323724 0.323724C0.755356 -0.107908 1.45517 -0.107908 1.8868 0.323724L7.73684 6.17376L13.5869 0.323724Z">
+                                    </path>
+                                </svg></button>
+                            <ul class="_u3ctvv" *ngIf="activeList === 5">
+                                <li class="_3hmsj"><a href="/kids" class="_pt9he7"
+                                        aria-activedescendant="course-title-0400"><span id="course-title-0400">Social
+                                            &amp; emotional learning (Khan Kids)</span></a></li>
+                                <li class="_3hmsj"><a href="/college-careers-more/ai-for-education" class="_pt9he7"
+                                        aria-activedescendant="course-title-0401"><span id="course-title-0401">AI for
+                                            education</span></a></li>
+                                <li class="_3hmsj"><a href="/college-careers-more/financial-literacy" class="_pt9he7"
+                                        aria-activedescendant="course-title-0402"><span id="course-title-0402">Financial
+                                            literacy</span></a></li>
+                                <li class="_3hmsj"><a href="/college-careers-more/internet-safety" class="_pt9he7"
+                                        aria-activedescendant="course-title-0403"><span id="course-title-0403">Internet
+                                            safety</span></a></li>
+                                <li class="_3hmsj"><a
+                                        href="/college-careers-more/social-media-challenges-and-opportunities"
+                                        class="_pt9he7" aria-activedescendant="course-title-0404"><span
+                                            id="course-title-0404">Social media</span></a></li>
+                            </ul>
+                            <ul class="_rm7tne8" *ngIf="activeList === 5">
+                                <li class="_3hmsj"><a href="/partner-content/learnstorm-growth-mindset-activities-us"
+                                        class="_pt9he7" aria-activedescendant="course-title-0410"><span
+                                            id="course-title-0410">Growth mindset</span></a></li>
+                                <li class="_3hmsj"><a href="/college-careers-more/college-admissions" class="_pt9he7"
+                                        aria-activedescendant="course-title-0411"><span id="course-title-0411">College
+                                            admissions</span></a></li>
+                                <li class="_3hmsj"><a href="/college-careers-more/career-content" class="_pt9he7"
+                                        aria-activedescendant="course-title-0412"><span
+                                            id="course-title-0412">Careers</span></a></li>
+                                <li class="_3hmsj"><a href="/college-careers-more/personal-finance" class="_pt9he7"
+                                        aria-activedescendant="course-title-0413"><span id="course-title-0413">Personal
+                                            finance</span></a></li>
+                                <li class="_1vrfoknn"><a href="/college-careers-more" class="_pt9he7"
+                                        aria-activedescendant="course-title-0414"><span id="course-title-0414">See all
+                                            Life Skills</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="_xu2jcg _15vgm93"><button class="_1gbamhn" aria-expanded="false"
+                                (click)="toggleListVisibility(6)"><img
+                                    src="https://cdn.kastatic.org/genfiles/topic-icons/icons/science_green.png-4ca7bf-128c.png"
+                                    width="45" height="45" class="_1yvsftr" alt="">Science<svg aria-hidden="true"
+                                    class="_ja3n4i" focusable="false" width="16" height="9" viewBox="0 0 16 9">
+                                    <path fill="#21242C"
+                                        d="M13.5869 0.323724C14.0185 -0.107908 14.7183 -0.107908 15.15 0.323724C15.5816 0.755356 15.5816 1.45517 15.15 1.8868L8.51838 8.51838C8.08675 8.95001 7.38693 8.95001 6.9553 8.51838L0.323724 1.8868C-0.107908 1.45517 -0.107908 0.755356 0.323724 0.323724C0.755356 -0.107908 1.45517 -0.107908 1.8868 0.323724L7.73684 6.17376L13.5869 0.323724Z">
+                                    </path>
+                                </svg></button>
+                            <ul class="_u3ctvv" *ngIf="activeList === 6">
+                                <li class="_3hmsj"><a href="/science/ms-biology" class="_pt9he7"
+                                        aria-activedescendant="course-title-0500"><span id="course-title-0500">Middle
+                                            school biology - NGSS</span></a></li>
+                                <li class="_3hmsj"><a href="/science/middle-school-earth-and-space-science"
+                                        class="_pt9he7" aria-activedescendant="course-title-0501"><span
+                                            id="course-title-0501">Middle school Earth and space science-
+                                            NGSS</span></a></li>
+                                <li class="_3hmsj"><a href="/science/ms-physics" class="_pt9he7"
+                                        aria-activedescendant="course-title-0502"><span id="course-title-0502">Middle
+                                            school physics - NGSS</span></a></li>
+                                <li class="_3hmsj"><a href="/science/high-school-biology" class="_pt9he7"
+                                        aria-activedescendant="course-title-0503"><span id="course-title-0503">High
+                                            school biology</span></a></li>
+                                <li class="_3hmsj"><a href="/science/hs-biology" class="_pt9he7"
+                                        aria-activedescendant="course-title-0504"><span id="course-title-0504">High
+                                            school biology - NGSS</span></a></li>
+                                <li class="_3hmsj"><a href="/science/high-school-physics" class="_pt9he7"
+                                        aria-activedescendant="course-title-0505"><span id="course-title-0505">High
+                                            school physics</span></a></li>
+                                <li class="_3hmsj"><a href="/science/hs-physics" class="_pt9he7"
+                                        aria-activedescendant="course-title-0506"><span id="course-title-0506">High
+                                            school physics - NGSS</span></a></li>
+                            </ul>
+                            <ul class="_rm7tne8" *ngIf="activeList === 6">
+                                <li class="_3hmsj"><a href="/science/ap-biology" class="_pt9he7"
+                                        aria-activedescendant="course-title-0510"><span
+                                            id="course-title-0510">AP®︎/College Biology</span></a></li>
+                                <li class="_3hmsj"><a href="/science/ap-chemistry-beta" class="_pt9he7"
+                                        aria-activedescendant="course-title-0511"><span
+                                            id="course-title-0511">AP®︎/College Chemistry</span></a></li>
+                                <li class="_3hmsj"><a href="/science/ap-college-environmental-science" class="_pt9he7"
+                                        aria-activedescendant="course-title-0512"><span
+                                            id="course-title-0512">AP®︎/College Environmental Science</span></a></li>
+                                <li class="_3hmsj"><a href="/science/ap-college-physics-1" class="_pt9he7"
+                                        aria-activedescendant="course-title-0513"><span
+                                            id="course-title-0513">AP®︎/College Physics 1</span></a></li>
+                                <li class="_3hmsj"><a href="/science/health-and-medicine" class="_pt9he7"
+                                        aria-activedescendant="course-title-0514"><span id="course-title-0514">Health
+                                            and Medicine</span></a></li>
+                                <li class="_1vrfoknn"><a href="/science" class="_pt9he7"
+                                        aria-activedescendant="course-title-0515"><span id="course-title-0515">See all
+                                            Science</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="_xu2jcg">
+                        <div class="_xu2jcg _15vgm93"><button class="_1gbamhn" aria-expanded="false"
+                                (click)="toggleListVisibility(7)"><img
+                                    src="https://cdn.kastatic.org/genfiles/topic-icons/icons/test_prep.png-f7c71f-128c.png"
+                                    width="45" height="45" class="_1yvsftr" alt="">Test prep<svg aria-hidden="true"
+                                    class="_ja3n4i" focusable="false" width="16" height="9" viewBox="0 0 16 9">
+                                    <path fill="#21242C"
+                                        d="M13.5869 0.323724C14.0185 -0.107908 14.7183 -0.107908 15.15 0.323724C15.5816 0.755356 15.5816 1.45517 15.15 1.8868L8.51838 8.51838C8.08675 8.95001 7.38693 8.95001 6.9553 8.51838L0.323724 1.8868C-0.107908 1.45517 -0.107908 0.755356 0.323724 0.323724C0.755356 -0.107908 1.45517 -0.107908 1.8868 0.323724L7.73684 6.17376L13.5869 0.323724Z">
+                                    </path>
+                                </svg></button>
+                            <ul class="_u3ctvv" *ngIf="activeList === 7">
+                                <li class="_3hmsj"><a href="/sat/start" class="_pt9he7"
+                                        aria-activedescendant="course-title-1000"><span id="course-title-1000">SAT (Fall
+                                            2023)</span></a></li>
+                                <li class="_3hmsj"><a href="/digital-sat/start" class="_pt9he7"
+                                        aria-activedescendant="course-title-1001"><span id="course-title-1001">Digital
+                                            SAT</span></a></li>
+                                <li class="_3hmsj"><a href="/prep/lsat" class="_pt9he7"
+                                        aria-activedescendant="course-title-1002"><span
+                                            id="course-title-1002">LSAT</span></a></li>
+                            </ul>
+                            <ul class="_rm7tne8" *ngIf="activeList === 7">
+                                <li class="_3hmsj"><a href="/prep/praxis-core" class="_pt9he7"
+                                        aria-activedescendant="course-title-1010"><span id="course-title-1010">Praxis
+                                            Core</span></a></li>
+                                <li class="_3hmsj"><a href="/test-prep/mcat" class="_pt9he7"
+                                        aria-activedescendant="course-title-1011"><span
+                                            id="course-title-1011">MCAT</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="_xu2jcg _15vgm93"><button class="_1gbamhn" aria-expanded="false"
+                                (click)="toggleListVisibility(8)"><img
+                                    src="https://cdn.kastatic.org/genfiles/topic-icons/icons/computing_orange.png-653676-128c.png"
+                                    width="45" height="45" class="_1yvsftr" alt="">Computing<svg aria-hidden="true"
+                                    class="_ja3n4i" focusable="false" width="16" height="9" viewBox="0 0 16 9">
+                                    <path fill="#21242C"
+                                        d="M13.5869 0.323724C14.0185 -0.107908 14.7183 -0.107908 15.15 0.323724C15.5816 0.755356 15.5816 1.45517 15.15 1.8868L8.51838 8.51838C8.08675 8.95001 7.38693 8.95001 6.9553 8.51838L0.323724 1.8868C-0.107908 1.45517 -0.107908 0.755356 0.323724 0.323724C0.755356 -0.107908 1.45517 -0.107908 1.8868 0.323724L7.73684 6.17376L13.5869 0.323724Z">
+                                    </path>
+                                </svg></button>
+                            <ul class="_u3ctvv" *ngIf="activeList === 8">
+                                <li class="_3hmsj"><a href="/computing/computer-programming" class="_pt9he7"
+                                        aria-activedescendant="course-title-1100"><span id="course-title-1100">Computer
+                                            programming</span></a></li>
+                                <li class="_3hmsj"><a href="/computing/ap-computer-science-principles" class="_pt9he7"
+                                        aria-activedescendant="course-title-1101"><span
+                                            id="course-title-1101">AP®︎/College Computer Science Principles</span></a>
+                                </li>
+                            </ul>
+                            <ul class="_rm7tne8" *ngIf="activeList === 8">
+                                <li class="_3hmsj"><a href="/computing/pixar" class="_pt9he7"
+                                        aria-activedescendant="course-title-1110"><span id="course-title-1110">Pixar in
+                                            a Box</span></a></li>
+                                <li class="_1vrfoknn"><a href="/computing" class="_pt9he7"
+                                        aria-activedescendant="course-title-1111"><span id="course-title-1111">See all
+                                            Computing</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="_xu2jcg _15vgm93"><button class="_1gbamhn" aria-expanded="false"
+                                (click)="toggleListVisibility(9)"><img
+                                    src="https://cdn.kastatic.org/genfiles/topic-icons/icons/arts_humanities.png-07c77b-128c.png"
+                                    width="45" height="45" class="_1yvsftr" alt="">Arts &amp; humanities<svg
+                                    aria-hidden="true" class="_ja3n4i" focusable="false" width="16" height="9"
+                                    viewBox="0 0 16 9">
+                                    <path fill="#21242C"
+                                        d="M13.5869 0.323724C14.0185 -0.107908 14.7183 -0.107908 15.15 0.323724C15.5816 0.755356 15.5816 1.45517 15.15 1.8868L8.51838 8.51838C8.08675 8.95001 7.38693 8.95001 6.9553 8.51838L0.323724 1.8868C-0.107908 1.45517 -0.107908 0.755356 0.323724 0.323724C0.755356 -0.107908 1.45517 -0.107908 1.8868 0.323724L7.73684 6.17376L13.5869 0.323724Z">
+                                    </path>
+                                </svg></button>
+                            <ul class="_u3ctvv" *ngIf="activeList === 9">
+                                <li class="_3hmsj"><a href="/humanities/us-history" class="_pt9he7"
+                                        aria-activedescendant="course-title-1200"><span id="course-title-1200">US
+                                            history</span></a></li>
+                                <li class="_3hmsj"><a href="/humanities/ap-us-history" class="_pt9he7"
+                                        aria-activedescendant="course-title-1201"><span
+                                            id="course-title-1201">AP®︎/College US History</span></a></li>
+                                <li class="_3hmsj"><a href="/humanities/us-government-and-civics" class="_pt9he7"
+                                        aria-activedescendant="course-title-1202"><span id="course-title-1202">US
+                                            government and civics</span></a></li>
+                                <li class="_3hmsj"><a href="/humanities/ap-us-government-and-politics" class="_pt9he7"
+                                        aria-activedescendant="course-title-1203"><span
+                                            id="course-title-1203">AP®︎/College US Government &amp; Politics</span></a>
+                                </li>
+                                <li class="_3hmsj"><a href="/humanities/whp-origins" class="_pt9he7"
+                                        aria-activedescendant="course-title-1204"><span id="course-title-1204">World
+                                            History Project - Origins to the Present</span></a></li>
+                                <li class="_3hmsj"><a href="/humanities/whp-1750" class="_pt9he7"
+                                        aria-activedescendant="course-title-1205"><span id="course-title-1205">World
+                                            History Project - 1750 to the Present</span></a></li>
+                            </ul>
+                            <ul class="_rm7tne8" *ngIf="activeList === 9">
+                                <li class="_3hmsj"><a href="/humanities/world-history-project-ap" class="_pt9he7"
+                                        aria-activedescendant="course-title-1210"><span
+                                            id="course-title-1210">AP®︎/College World History</span></a></li>
+                                <li class="_3hmsj"><a href="/humanities/big-history-project" class="_pt9he7"
+                                        aria-activedescendant="course-title-1211"><span id="course-title-1211">Big
+                                            History Project</span></a></li>
+                                <li class="_3hmsj"><a href="/humanities/art-history" class="_pt9he7"
+                                        aria-activedescendant="course-title-1212"><span id="course-title-1212">Art
+                                            history</span></a></li>
+                                <li class="_3hmsj"><a href="/humanities/ap-art-history" class="_pt9he7"
+                                        aria-activedescendant="course-title-1213"><span
+                                            id="course-title-1213">AP®︎/College Art History</span></a></li>
+                                <li class="_1vrfoknn"><a href="/humanities" class="_pt9he7"
+                                        aria-activedescendant="course-title-1214"><span id="course-title-1214">See all
+                                            Arts &amp; Humanities</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="_xu2jcg _15vgm93"><button class="_1gbamhn" aria-expanded="false"
+                                (click)="toggleListVisibility(10)"><img
+                                    src="https://cdn.kastatic.org/genfiles/topic-icons/icons/economics_finance.png-55daed-128c.png"
+                                    width="45" height="45" class="_1yvsftr" alt="">Economics<svg aria-hidden="true"
+                                    class="_ja3n4i" focusable="false" width="16" height="9" viewBox="0 0 16 9">
+                                    <path fill="#21242C"
+                                        d="M13.5869 0.323724C14.0185 -0.107908 14.7183 -0.107908 15.15 0.323724C15.5816 0.755356 15.5816 1.45517 15.15 1.8868L8.51838 8.51838C8.08675 8.95001 7.38693 8.95001 6.9553 8.51838L0.323724 1.8868C-0.107908 1.45517 -0.107908 0.755356 0.323724 0.323724C0.755356 -0.107908 1.45517 -0.107908 1.8868 0.323724L7.73684 6.17376L13.5869 0.323724Z">
+                                    </path>
+                                </svg></button>
+                            <ul class="_u3ctvv" *ngIf="activeList === 10">
+                                <li class="_3hmsj"><a href="/economics-finance-domain/macroeconomics" class="_pt9he7"
+                                        aria-activedescendant="course-title-1300"><span
+                                            id="course-title-1300">Macroeconomics</span></a></li>
+                                <li class="_3hmsj"><a href="/economics-finance-domain/ap-macroeconomics" class="_pt9he7"
+                                        aria-activedescendant="course-title-1301"><span
+                                            id="course-title-1301">AP®︎/College Macroeconomics</span></a></li>
+                                <li class="_3hmsj"><a href="/economics-finance-domain/microeconomics" class="_pt9he7"
+                                        aria-activedescendant="course-title-1302"><span
+                                            id="course-title-1302">Microeconomics</span></a></li>
+                            </ul>
+                            <ul class="_rm7tne8" *ngIf="activeList === 10">
+                                <li class="_3hmsj"><a href="/economics-finance-domain/ap-microeconomics" class="_pt9he7"
+                                        aria-activedescendant="course-title-1310"><span
+                                            id="course-title-1310">AP®︎/College Microeconomics</span></a></li>
+                                <li class="_1vrfoknn"><a href="/economics-finance-domain" class="_pt9he7"
+                                        aria-activedescendant="course-title-1311"><span id="course-title-1311">See all
+                                            Economics</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="_xu2jcg _13nc1w19"><button class="_1gbamhn" aria-expanded="false"
+                                (click)="toggleListVisibility(11)"><img
+                                    src="https://cdn.kastatic.org/genfiles/topic-icons/icons/partner_content.png-1b8f1b-128c.png"
+                                    width="45" height="45" class="_1yvsftr" alt="">Partner courses<svg
+                                    aria-hidden="true" class="_ja3n4i" focusable="false" width="16" height="9"
+                                    viewBox="0 0 16 9">
+                                    <path fill="#21242C"
+                                        d="M13.5869 0.323724C14.0185 -0.107908 14.7183 -0.107908 15.15 0.323724C15.5816 0.755356 15.5816 1.45517 15.15 1.8868L8.51838 8.51838C8.08675 8.95001 7.38693 8.95001 6.9553 8.51838L0.323724 1.8868C-0.107908 1.45517 -0.107908 0.755356 0.323724 0.323724C0.755356 -0.107908 1.45517 -0.107908 1.8868 0.323724L7.73684 6.17376L13.5869 0.323724Z">
+                                    </path>
+                                </svg></button>
+                            <ul class="_u3ctvv" *ngIf="activeList === 11">
+                                <li class="_3hmsj"><a href="/cas-biodiversity" class="_pt9he7"
+                                        aria-activedescendant="course-title-1400"><span
+                                            id="course-title-1400">Biodiversity</span></a></li>
+                                <li class="_3hmsj"><a href="/all-star-orchestra" class="_pt9he7"
+                                        aria-activedescendant="course-title-1401"><span
+                                            id="course-title-1401">Music</span></a></li>
+                                <li class="_3hmsj"><a href="/nasa" class="_pt9he7"
+                                        aria-activedescendant="course-title-1402"><span
+                                            id="course-title-1402">NASA</span></a></li>
+                            </ul>
+                            <ul class="_rm7tne8" *ngIf="activeList === 11">
+                                <li class="_3hmsj"><a href="/amnh" class="_pt9he7"
+                                        aria-activedescendant="course-title-1410"><span id="course-title-1410">Natural
+                                            History</span></a></li>
+                                <li class="_3hmsj"><a href="/nova" class="_pt9he7"
+                                        aria-activedescendant="course-title-1411"><span id="course-title-1411">NOVA
+                                            Labs</span></a></li>
+                                <li class="_3hmsj"><a href="/wi-phi" class="_pt9he7"
+                                        aria-activedescendant="course-title-1412"><span
+                                            id="course-title-1412">Philosophy</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+
+        </section>
+
+        <!-- About us -->
+        <section class="about">
+            <div class="container my-5">
+                <div class="p-5 text-center bg-body-tertiary rounded-3">
+
+                    <h1 class="text-body-emphasis">About us</h1>
+                    <p class="col-lg-8 mx-auto fs-5 text-muted">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem provident iure praesentium
+                        recusandae culpa possimus accusamus facere at, beatae esse nostrum suscipit placeat alias soluta
+                        rem quibusdam est fugiat vel!
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous">
+        </script>
+
+    </body>

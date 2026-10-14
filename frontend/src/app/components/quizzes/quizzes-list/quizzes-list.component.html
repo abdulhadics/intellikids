@@ -1,0 +1,26 @@
+<div class="form-loader" *ngIf="loading">
+    <div class="spinner-border text-primary" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+  <div class="container-fluid py-5" *ngIf="!loading">
+    <h5 class="text-primary text-uppercase mb-3 text-center">
+      {{ selectedContent.content_name }}
+    </h5>
+    <div class="course-list" *ngFor="let quiz of selectedContent.quizzes" style="background-color: lightcyan !important;">
+      <div class="course row d-flex">
+        <div class="course-title">{{ quiz.title }}</div>
+        <div class="course-description">{{ selectedContent.tutorial_text }}.</div>
+        <div class="">
+          <button
+            (click)="openQuiz(quiz.id)"
+            class="submit_btn mb-2"
+            style="padding: 0.5%; width: 10%"
+          >
+            Attempt
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
